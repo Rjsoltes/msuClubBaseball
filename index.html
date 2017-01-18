@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MSU Club Baseball</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/blueberry.css">
+        <link rel="stylesheet" href="./css/ionicons.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+       <div class="page-container">
+           <header>
+               <h1>Msu Club Baseball</h1>
+               <img class="logo" src="img/clubLogo.png" alt="logo">
+            </header>
+            <nav>
+                <ul class="main-nav">
+                   <li><a href="./html/schedule.html">Schedule</a></li>
+                   <li><a href="./html/photos.html">Photos</a></li>
+                   <li><a href="./html/roster.html">Roster</a></li>
+                   <li><a href="./html/stats.html">Stats</a></li>
+                   <li><a href="./html/information.html">Information</a></li>
+                   <li><a href="./html/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <section>
+                <div id="wrapper">
+                        <div id="container">
+                            <div class="controller" id="prev">
+                                
+                            </div>
+                            <div id="slider">
+                                <img src="img/RoCenter.jpg" alt="">
+                                <img src="img/marty.png" alt="">
+                                <img src="img/joePitch.jpg" alt="">
+                                <img src="img/tomjoe.png" alt="">
+                                <img src="img/tomjosh.png" alt="">
+                            </div>
+                            <div class="controller" id="next">
+                                
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section>
+                <div class="home-page-section">
+                   <h1>Announcements</h1>
+                    <p>
+                       <ul>
+                           <li>Announcement #1</li>
+                           <li>Announcement #2</li>
+                           <li>Announcement #3</li>
+                       </ul>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="row">
+                <ul class="social-links">
+                    <li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/johnnydamonswag" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="ion-social-googleplus"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2016 Ryan Soltes.  All rights reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/jquery.cycle.all.js"></script>
+        <script type="text/javascript">
+            $('#slider').cycle({ 
+                fx:     'scrollHorz', 
+                speed:  'slow', 
+                next:   '#next', 
+                prev:   '#prev' 
+            });
+        
+        </script>
+    </body>
+</html>
